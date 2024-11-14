@@ -1,10 +1,14 @@
 import requests
-from backend.config import SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REDIRECT_URI
+from jose import JWTError, jwt
+import datetime
+from backend.config import SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REDIRECT_URI, JWT_SECRET
 import base64
 
 SPOTIFY_AUTH_URL = "https://accounts.spotify.com/authorize"
 SPOTIFY_TOKEN_URL = "https://accounts.spotify.com/api/token"
 SCOPE = "user-top-read user-read-recently-played playlist-modify-public"
+JWT_ALGORITHM = "HS256"
+JWT_EXPIRATION_MINUTES = 60
 
 async def generate_spotify_login_url():
   return (
@@ -40,9 +44,18 @@ async def handle_spotify_callback(code: str):
   )
   profile_data = profile_response.json()
   
-  return {
-    "spotify_user_id": profile_data["id"],
-    "access_token": access_token,
-    "refresh_token": token_data.get("refresh_token"),
-    "token_expiry": token_data.get("expires_in")
+  payload = {
+    "sub": profile_data["id"],
+    "exp": datetime.datetime.utcnow() + datetime.timedelta(minutes=JWT_EXPIRATION_MINUTES),
+    "iat": datetime.datetime.utcnow(),
+    "spotify_access_token": access_token,
+    "spotify_refresh_token": token_data.get("refresh_token"),
   }
+  
+  jwt_token = jwt.encode(payload, JWT_SECRET, algorithm=JWT_ALGORITHM)
+  return {
+        "jwt_token": jwt_token,
+        "profile_data": profile_data,
+        "access_token": access_token,
+        "refresh_token": token_data.get("refresh_token"),
+    }
