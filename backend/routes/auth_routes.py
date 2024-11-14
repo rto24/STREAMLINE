@@ -1,7 +1,8 @@
-from fastapi import APIRouter, HTTPException, Query
+from fastapi import APIRouter, HTTPException, Query, Response, Depends
 from backend.controllers.auth_controller import generate_spotify_login_url, handle_spotify_callback
+from backend.middleware.auth_middleware import jwt_middleware_config
 from fastapi.responses import RedirectResponse
-from fastapi import Response
+
 
 router = APIRouter()
 
@@ -29,3 +30,7 @@ async def callback(code: str):
     return response
   except Exception as e:
     raise HTTPException(status_code=500, detail=str(e))
+  
+@router.get("/user")
+async def get_user(payload: dict = Depends(jwt_middleware_config)):
+  return {"user": payload}

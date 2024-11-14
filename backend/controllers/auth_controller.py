@@ -1,13 +1,12 @@
 import requests
 from jose import JWTError, jwt
 import datetime
-from backend.config import SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REDIRECT_URI, JWT_SECRET
+from backend.config import SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REDIRECT_URI, JWT_SECRET, JWT_ALGORITHM
 import base64
 
 SPOTIFY_AUTH_URL = "https://accounts.spotify.com/authorize"
 SPOTIFY_TOKEN_URL = "https://accounts.spotify.com/api/token"
 SCOPE = "user-top-read user-read-recently-played playlist-modify-public"
-JWT_ALGORITHM = "HS256"
 JWT_EXPIRATION_MINUTES = 60
 
 async def generate_spotify_login_url():
