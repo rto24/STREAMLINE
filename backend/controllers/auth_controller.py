@@ -28,9 +28,21 @@ async def handle_spotify_callback(code: str):
     },
   )
   token_data = token_response.json()
+  
+  if "access_token" not in token_data:
+    raise Exception("Failed to fetch tokens")
+  
+  access_token = token_data["access_token"]
+  
+  profile_response = requests.get(
+    "https://api.spotify.com/v1/me",
+    headers={"Authorization": f"Bearer {access_token}"}
+  )
+  profile_data = profile_response.json()
+  
   return {
-    "spotify_user_id": token_data["id"],
-    "access_token": token_data["access_token"],
-    "refresh_token": token_data["refresh_token"],
-    "token_expiry": token_data["expires_in"]
+    "spotify_user_id": profile_data["id"],
+    "access_token": access_token,
+    "refresh_token": token_data.get("refresh_token"),
+    "token_expiry": token_data.get("expires_in")
   }

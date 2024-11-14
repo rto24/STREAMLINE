@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Query
 from backend.controllers.auth_controller import generate_spotify_login_url, handle_spotify_callback
 
 router = APIRouter()
@@ -9,7 +9,7 @@ async def login():
   return {"auth_url": auth_url}
 
 @router.get("/callback")
-async def callback(code: str):
+async def callback(code: str = Query(...)):
   try:
     tokens = await handle_spotify_callback(code)
     return {"message": "User authenticated", "tokens": tokens}
