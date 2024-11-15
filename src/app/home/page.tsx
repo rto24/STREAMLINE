@@ -1,8 +1,15 @@
+"use client"
+
 import React from 'react'
+import { useUser } from '@/context/UserContext'
 
 const HomePage = () => {
+  const { username } = useUser();
   return (
-    <div>HomePage</div>
+    <>
+      <div>HomePage</div>
+      <p>{username}</p>
+    </>
   )
 }
 
