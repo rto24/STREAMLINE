@@ -1,11 +1,9 @@
 import requests
 from jose import JWTError, jwt
 import datetime
-from backend.config import SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REDIRECT_URI, JWT_SECRET, JWT_ALGORITHM
+from backend.config import SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REDIRECT_URI, JWT_SECRET, JWT_ALGORITHM, SPOTIFY_AUTH_URL, SPOTIFY_TOKEN_URL
 import base64
 
-SPOTIFY_AUTH_URL = "https://accounts.spotify.com/authorize"
-SPOTIFY_TOKEN_URL = "https://accounts.spotify.com/api/token"
 SCOPE = "user-top-read user-read-recently-played playlist-modify-public"
 JWT_EXPIRATION_MINUTES = 60
 
@@ -45,6 +43,7 @@ async def handle_spotify_callback(code: str):
   
   payload = {
     "sub": profile_data["id"],
+    "general": profile_data,
     "exp": datetime.datetime.utcnow() + datetime.timedelta(minutes=JWT_EXPIRATION_MINUTES),
     "iat": datetime.datetime.utcnow(),
     "spotify_access_token": access_token,
