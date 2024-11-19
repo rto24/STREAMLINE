@@ -11,3 +11,13 @@ async def jwt_middleware_config(request: Request):
     return payload
   except JWTError as e:
     raise HTTPException(status_code=401, detail="Invalid token")
+  
+async def jwt_middleware_access_token(request: Request):
+  token = request.cookies.get("spotify_jwt")
+  if not token:
+    raise HTTPException(status_code=401, detail="Missing JWT token")
+  try: 
+    payload = jwt.decode(token, JWT_SECRET, algorithms=[JWT_ALGORITHM])
+    return payload["spotify_access_token"]
+  except JWTError as e:
+    raise HTTPException(status_code=401, detail="Invalid token")
