@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException, Query, Response, Depends
+from fastapi import APIRouter, HTTPException, Depends
 from backend.middleware.auth_middleware import jwt_middleware_access_token
 from backend.controllers.spotify_data_controller import get_user_top_tracks, get_user_top_artists, get_user_audio_metadata
 from backend.scripts.fetch_data import fetch_user_data
