@@ -3,6 +3,7 @@ from pathlib import Path
 from fastapi import FastAPI, HTTPException
 from backend.routes.auth_routes import router as auth_router
 from backend.routes.spotify_data_routes import router as spotify_router
+from backend.routes.model_output_routes import router as model_router
 from backend.db.supabase_client import supabase
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -20,6 +21,7 @@ app.add_middleware(
 # Register routers
 app.include_router(auth_router, prefix="/auth")
 app.include_router(spotify_router, prefix="/spotify")
+app.include_router(model_router, prefix="/model")
 
 # Root endpoint
 @app.get("/")
