@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { useUser } from '@/context/UserContext'
+import GenerateSongs from '@/components/GenerateSongs'
 
 const HomePage = () => {
   const { username } = useUser();
@@ -9,6 +10,7 @@ const HomePage = () => {
     <>
       <div>HomePage</div>
       <p>{username}</p>
+      <GenerateSongs/>
     </>
   )
 }
