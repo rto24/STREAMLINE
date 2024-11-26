@@ -2,7 +2,7 @@ import json
 import os
 from fastapi import Depends
 from backend.controllers.spotify_data_controller import get_user_top_tracks, get_user_top_artists, get_user_audio_metadata
-from backend.middleware.auth_middleware import jwt_middleware_access_token
+from backend.middleware.auth_middleware import jwt_middleware_access_token 
 
 def fetch_user_data(access_token: str, limit=5, output_file: str = "backend/data/train.json"):
   tracks = get_user_top_tracks(access_token, limit=limit)
@@ -51,3 +51,4 @@ def fetch_user_data(access_token: str, limit=5, output_file: str = "backend/data
     "genres": top_genres,
     "reformatted_data": reformatted_data
   }
+  

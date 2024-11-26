@@ -1,118 +1,122 @@
 [
-  {
-    "input": "User likes tracks: As It Was (danceability: 0.682, tempo: 118.045, energy: 0.741), Bad Habit (danceability: 0.778, tempo: 89.978, energy: 0.640), Levitating (danceability: 0.813, tempo: 103.993, energy: 0.812), Running Up That Hill (danceability: 0.492, tempo: 109.934, energy: 0.631), About Damn Time (danceability: 0.753, tempo: 113.999, energy: 0.754). User's top artists: Harry Styles, Lizzo, Kate Bush, Steve Lacy, Dua Lipa. User's top genres: pop, pop rap, funk, indie pop, dance pop. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. Watermelon Sugar by Harry Styles\n2. Don't Start Now by Dua Lipa\n3. Juice by Lizzo\n4. Blinding Lights by The Weeknd\n5. Heat Waves by Glass Animals"
-  },
-  {
-      "input": "User likes tracks: Blinding Lights (danceability: 0.514, tempo: 171.005, energy: 0.740), Take My Breath (danceability: 0.592, tempo: 121.987, energy: 0.780), Save Your Tears (danceability: 0.574, tempo: 115.089, energy: 0.674), Out of Time (danceability: 0.620, tempo: 93.953, energy: 0.460), Sacrifice (danceability: 0.694, tempo: 124.022, energy: 0.827). User's top artists: The Weeknd, Ariana Grande, Doja Cat, Calvin Harris, SZA. User's top genres: pop, electropop, r&b, funk, dance pop, soul. Recommend 5 songs that match the user's taste in music.",
-      "output": "1. Starboy by The Weeknd\n2. New Rules by Dua Lipa\n3. Good Days by SZA\n4. Stay With Me by Calvin Harris\n5. Say So by Doja Cat"
-  },
-  {
-      "input": "User likes tracks: Industry Baby (danceability: 0.648, tempo: 150.021, energy: 0.895), Montero (danceability: 0.711, tempo: 88.986, energy: 0.728), SUN GOES DOWN (danceability: 0.614, tempo: 91.969, energy: 0.591), HOLIDAY (danceability: 0.773, tempo: 124.058, energy: 0.735), Old Town Road (danceability: 0.884, tempo: 136.081, energy: 0.832). User's top artists: Lil Nas X, Billie Eilish, Post Malone, Megan Thee Stallion, Travis Scott. User's top genres: rap, pop rap, trap, hip hop, pop, alternative pop. Recommend 5 songs that match the user's taste in music.",
-      "output": "1. Circles by Post Malone\n2. Savage Remix by Megan Thee Stallion ft. Beyoncé\n3. Happier Than Ever by Billie Eilish\n4. Goosebumps by Travis Scott\n5. Mood by 24kGoldn ft. Iann Dior"
-  },
-  {
-      "input": "User likes tracks: Euphoria (danceability: 0.598, tempo: 126.993, energy: 0.768), Butter (danceability: 0.761, tempo: 110.048, energy: 0.812), Dynamite (danceability: 0.764, tempo: 114.925, energy: 0.830), Boy With Luv (danceability: 0.730, tempo: 120.092, energy: 0.742), Permission to Dance (danceability: 0.658, tempo: 124.015, energy: 0.733). User's top artists: BTS, BLACKPINK, TWICE, ITZY, SEVENTEEN. User's top genres: k-pop, k-pop boy group, k-pop girl group, pop, dance pop, korean pop. Recommend 5 songs that match the user's taste in music.",
-      "output": "1. Kill This Love by BLACKPINK\n2. Fancy by TWICE\n3. Dalla Dalla by ITZY\n4. Left & Right by SEVENTEEN\n5. ON by BTS"
-  },
-  {
-      "input": "User likes tracks: The Less I Know The Better (danceability: 0.685, tempo: 119.927, energy: 0.733), Feels Like We Only Go Backwards (danceability: 0.505, tempo: 91.054, energy: 0.544), Elephant (danceability: 0.545, tempo: 123.998, energy: 0.927), Borderline (danceability: 0.706, tempo: 119.993, energy: 0.718), Lost In Yesterday (danceability: 0.660, tempo: 113.994, energy: 0.764). User's top artists: Tame Impala, Arctic Monkeys, Mac DeMarco, Gorillaz, Glass Animals. User's top genres: indie rock, psych rock, chillwave, alternative pop, dream pop, indie pop. Recommend 5 songs that match the user's taste in music.",
-      "output": "1. Do I Wanna Know? by Arctic Monkeys\n2. Space Song by Beach House\n3. Somebody Else by The 1975\n4. Momentary Bliss by Gorillaz\n5. Heat Waves by Glass Animals"
-  },
-  {
-    "input": "User likes tracks: Blame It on the Boogie (danceability: 0.853, tempo: 116.058, energy: 0.897), September (danceability: 0.780, tempo: 125.991, energy: 0.865), Stayin' Alive (danceability: 0.796, tempo: 103.986, energy: 0.810), Le Freak (danceability: 0.871, tempo: 119.984, energy: 0.879), Get Down On It (danceability: 0.843, tempo: 110.042, energy: 0.864). User's top artists: Earth, Wind & Fire, The Jacksons, Bee Gees, Chic, Kool & The Gang. User's top genres: disco, funk, pop, soul, r&b. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. Dancing Queen by ABBA\n2. I Want You Back by The Jackson 5\n3. Boogie Wonderland by Earth, Wind & Fire\n4. You Should Be Dancing by Bee Gees\n5. Super Freak by Rick James"
-  },
-  {
-    "input": "User likes tracks: Smells Like Teen Spirit (danceability: 0.429, tempo: 117.098, energy: 0.935), Come As You Are (danceability: 0.443, tempo: 120.074, energy: 0.811), Lithium (danceability: 0.415, tempo: 120.005, energy: 0.854), Everlong (danceability: 0.486, tempo: 158.085, energy: 0.930), Learn to Fly (danceability: 0.519, tempo: 136.004, energy: 0.831). User's top artists: Nirvana, Foo Fighters, Pearl Jam, Soundgarden, Alice In Chains. User's top genres: grunge, alternative rock, post-grunge, hard rock. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. Black by Pearl Jam\n2. Outshined by Soundgarden\n3. Rooster by Alice In Chains\n4. My Hero by Foo Fighters\n5. Heart-Shaped Box by Nirvana"
-  },
-  {
-    "input": "User likes tracks: Havana (danceability: 0.745, tempo: 104.989, energy: 0.586), Señorita (danceability: 0.769, tempo: 116.981, energy: 0.660), Despacito (danceability: 0.696, tempo: 89.999, energy: 0.815), Mi Gente (danceability: 0.768, tempo: 105.015, energy: 0.888), Con Calma (danceability: 0.825, tempo: 94.994, energy: 0.866). User's top artists: Camila Cabello, Shawn Mendes, Daddy Yankee, J Balvin, Luis Fonsi. User's top genres: reggaeton, latin pop, pop, tropical house, dance pop. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. Taki Taki by DJ Snake ft. Selena Gomez, Ozuna, Cardi B\n2. Felices los 4 by Maluma\n3. Chantaje by Shakira ft. Maluma\n4. In My Blood by Shawn Mendes\n5. Don't Go Yet by Camila Cabello"
-  },
-  {
-    "input": "User likes tracks: Clair de Lune (danceability: 0.207, tempo: 66.992, energy: 0.129), Moonlight Sonata (danceability: 0.195, tempo: 52.028, energy: 0.105), Nocturne Op. 9 No. 2 (danceability: 0.231, tempo: 68.031, energy: 0.123), Gymnopédie No. 1 (danceability: 0.295, tempo: 72.018, energy: 0.097), The Swan (danceability: 0.230, tempo: 79.903, energy: 0.112). User's top artists: Claude Debussy, Frédéric Chopin, Ludwig van Beethoven, Erik Satie, Camille Saint-Saëns. User's top genres: classical, romantic, impressionist. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. Prelude in E Minor by Frédéric Chopin\n2. Fur Elise by Ludwig van Beethoven\n3. Pavane by Gabriel Fauré\n4. Canon in D by Johann Pachelbel\n5. Reverie by Claude Debussy"
-  },
-  {
-    "input": "User likes tracks: Radioactive (danceability: 0.575, tempo: 139.970, energy: 0.829), Demons (danceability: 0.561, tempo: 89.973, energy: 0.757), It's Time (danceability: 0.580, tempo: 105.978, energy: 0.831), Believer (danceability: 0.567, tempo: 124.984, energy: 0.869), On Top of the World (danceability: 0.686, tempo: 105.013, energy: 0.851). User's top artists: Imagine Dragons, Bastille, OneRepublic, Coldplay, X Ambassadors. User's top genres: pop rock, alternative rock, indie pop, electropop. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. Pompeii by Bastille\n2. Counting Stars by OneRepublic\n3. Yellow by Coldplay\n4. Renegades by X Ambassadors\n5. Warriors by Imagine Dragons"
-  },
-  {
-    "input": "User likes tracks: Shape of You (danceability: 0.825, tempo: 95.977, energy: 0.652), Thinking Out Loud (danceability: 0.533, tempo: 79.972, energy: 0.444), Perfect (danceability: 0.497, tempo: 95.026, energy: 0.440), Bad Habits (danceability: 0.782, tempo: 113.988, energy: 0.781), Castle on the Hill (danceability: 0.593, tempo: 135.032, energy: 0.830). User's top artists: Ed Sheeran, Adele, Taylor Swift, Sam Smith, Lewis Capaldi. User's top genres: pop, acoustic pop, singer-songwriter, british pop. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. Someone Like You by Adele\n2. Before You Go by Lewis Capaldi\n3. All Too Well by Taylor Swift\n4. Stay With Me by Sam Smith\n5. Photograph by Ed Sheeran"
-  },
-  {
-    "input": "User likes tracks: Sandstorm (danceability: 0.776, tempo: 136.971, energy: 0.988), Levels (danceability: 0.718, tempo: 126.995, energy: 0.899), Strobe (danceability: 0.494, tempo: 127.002, energy: 0.909), Animals (danceability: 0.661, tempo: 128.019, energy: 0.948), Clarity (danceability: 0.627, tempo: 128.034, energy: 0.876). User's top artists: Darude, Avicii, Deadmau5, Martin Garrix, Zedd. User's top genres: edm, progressive house, trance, electro house, dance pop. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. Don't You Worry Child by Swedish House Mafia\n2. Titanium by David Guetta ft. Sia\n3. Ghosts 'n' Stuff by Deadmau5\n4. The Nights by Avicii\n5. Spectrum by Zedd"
-  },
-  {
-    "input": "User likes tracks: Sunflower (danceability: 0.756, tempo: 89.971, energy: 0.599), Circles (danceability: 0.685, tempo: 120.002, energy: 0.651), Wow. (danceability: 0.887, tempo: 101.981, energy: 0.793), Congratulations (danceability: 0.640, tempo: 110.045, energy: 0.625), Goodbyes (danceability: 0.669, tempo: 140.094, energy: 0.728). User's top artists: Post Malone, Khalid, Halsey, Travis Scott, Billie Eilish. User's top genres: pop, rap, r&b, pop rap, alternative pop, hip hop. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. Sunroof by Nicky Youre\n2. Eastside by Benny Blanco ft. Halsey & Khalid\n3. Sicko Mode by Travis Scott\n4. lovely by Billie Eilish ft. Khalid\n5. Rockstar by Post Malone ft. 21 Savage"
-  },
-  {
-    "input": "User likes tracks: Driver's License (danceability: 0.461, tempo: 144.093, energy: 0.561), good 4 u (danceability: 0.573, tempo: 169.954, energy: 0.844), deja vu (danceability: 0.609, tempo: 94.010, energy: 0.726), Brutal (danceability: 0.557, tempo: 150.050, energy: 0.927), happier (danceability: 0.434, tempo: 80.001, energy: 0.492). User's top artists: Olivia Rodrigo, Taylor Swift, Lorde, Billie Eilish, Conan Gray. User's top genres: pop, indie pop, singer-songwriter, bedroom pop, alternative pop. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. traitor by Olivia Rodrigo\n2. Heather by Conan Gray\n3. The Archer by Taylor Swift\n4. Royals by Lorde\n5. when the party's over by Billie Eilish"
-  },
-  {
-    "input": "User likes tracks: Lose Yourself (danceability: 0.624, tempo: 171.991, energy: 0.867), Not Afraid (danceability: 0.707, tempo: 87.991, energy: 0.897), Love the Way You Lie (danceability: 0.590, tempo: 84.995, energy: 0.849), The Real Slim Shady (danceability: 0.816, tempo: 105.037, energy: 0.879), Stan (danceability: 0.594, tempo: 82.962, energy: 0.712). User's top artists: Eminem, 50 Cent, Dr. Dre, Snoop Dogg, Kanye West. User's top genres: rap, hip hop, pop rap, gangsta rap. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. In Da Club by 50 Cent\n2. Still D.R.E. by Dr. Dre ft. Snoop Dogg\n3. Gold Digger by Kanye West ft. Jamie Foxx\n4. Forgot About Dre by Dr. Dre ft. Eminem\n5. Mockingbird by Eminem"
-  },
-  {
-    "input": "User likes tracks: Somebody to Love (danceability: 0.453, tempo: 112.023, energy: 0.761), Bohemian Rhapsody (danceability: 0.407, tempo: 143.986, energy: 0.637), Don't Stop Me Now (danceability: 0.608, tempo: 156.001, energy: 0.894), We Are the Champions (danceability: 0.313, tempo: 63.978, energy: 0.699), Radio Ga Ga (danceability: 0.505, tempo: 112.089, energy: 0.813). User's top artists: Queen, David Bowie, Elton John, The Beatles, Fleetwood Mac. User's top genres: classic rock, glam rock, pop rock. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. Heroes by David Bowie\n2. Tiny Dancer by Elton John\n3. Let It Be by The Beatles\n4. Dreams by Fleetwood Mac\n5. Under Pressure by Queen & David Bowie"
-  },
-  {
-    "input": "User likes tracks: Hotline Bling (danceability: 0.736, tempo: 134.938, energy: 0.487), One Dance (danceability: 0.801, tempo: 104.982, energy: 0.617), In My Feelings (danceability: 0.869, tempo: 94.960, energy: 0.554), God's Plan (danceability: 0.742, tempo: 77.988, energy: 0.584), Laugh Now Cry Later (danceability: 0.774, tempo: 135.008, energy: 0.632). User's top artists: Drake, Rihanna, The Weeknd, Future, Travis Scott. User's top genres: rap, r&b, trap, pop, pop rap. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. Work by Rihanna ft. Drake\n2. Life Is Good by Future ft. Drake\n3. Blinding Lights by The Weeknd\n4. Sicko Mode by Travis Scott\n5. Take Care by Drake ft. Rihanna"
-  },
-  {
-    "input": "User likes tracks: Rolling in the Deep (danceability: 0.548, tempo: 105.021, energy: 0.774), Hello (danceability: 0.334, tempo: 78.981, energy: 0.490), Easy on Me (danceability: 0.460, tempo: 70.000, energy: 0.435), Someone Like You (danceability: 0.415, tempo: 67.000, energy: 0.362), Set Fire to the Rain (danceability: 0.531, tempo: 108.023, energy: 0.748). User's top artists: Adele, Sam Smith, Ed Sheeran, Lewis Capaldi, Taylor Swift. User's top genres: pop, british pop, singer-songwriter, soul. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. Stay With Me by Sam Smith\n2. Perfect by Ed Sheeran\n3. Before You Go by Lewis Capaldi\n4. All Too Well by Taylor Swift\n5. Skyfall by Adele"
-  },
-  {
-    "input": "User likes tracks: Humble (danceability: 0.800, tempo: 149.958, energy: 0.865), DNA (danceability: 0.725, tempo: 144.000, energy: 0.944), Alright (danceability: 0.771, tempo: 110.003, energy: 0.837), Money Trees (danceability: 0.637, tempo: 123.968, energy: 0.754), Swimming Pools (danceability: 0.596, tempo: 153.012, energy: 0.717). User's top artists: Kendrick Lamar, J. Cole, Travis Scott, Jay-Z, Childish Gambino. User's top genres: rap, hip hop, trap, conscious rap. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. Power Trip by J. Cole ft. Miguel\n2. Goosebumps by Travis Scott\n3. This Is America by Childish Gambino\n4. N95 by Kendrick Lamar\n5. Empire State of Mind by Jay-Z ft. Alicia Keys"
-  },
-  {
-    "input": "User likes tracks: Viva La Vida (danceability: 0.617, tempo: 138.005, energy: 0.706), Fix You (danceability: 0.367, tempo: 138.040, energy: 0.514), Yellow (danceability: 0.466, tempo: 172.058, energy: 0.600), Paradise (danceability: 0.563, tempo: 140.005, energy: 0.706), Adventure of a Lifetime (danceability: 0.720, tempo: 112.040, energy: 0.838). User's top artists: Coldplay, Imagine Dragons, OneRepublic, U2, Snow Patrol. User's top genres: pop rock, alternative rock, indie pop. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. Counting Stars by OneRepublic\n2. Clocks by Coldplay\n3. With or Without You by U2\n4. Run by Snow Patrol\n5. Believer by Imagine Dragons"
-  },
-  {
-    "input": "User likes tracks: Smooth Criminal (danceability: 0.756, tempo: 118.015, energy: 0.841), Billie Jean (danceability: 0.790, tempo: 117.983, energy: 0.737), Beat It (danceability: 0.576, tempo: 138.011, energy: 0.910), Thriller (danceability: 0.723, tempo: 120.055, energy: 0.798), Black or White (danceability: 0.710, tempo: 115.041, energy: 0.874). User's top artists: Michael Jackson, Prince, Stevie Wonder, Whitney Houston, Madonna. User's top genres: pop, funk, r&b, soul, dance pop. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. Purple Rain by Prince\n2. I Wanna Dance with Somebody by Whitney Houston\n3. Superstition by Stevie Wonder\n4. Vogue by Madonna\n5. Rock With You by Michael Jackson"
-  },
-  {
-    "input": "User likes tracks: Take Five (danceability: 0.501, tempo: 171.979, energy: 0.601), So What (danceability: 0.351, tempo: 132.121, energy: 0.451), Round Midnight (danceability: 0.230, tempo: 67.055, energy: 0.238), A Love Supreme (danceability: 0.326, tempo: 134.006, energy: 0.562), My Favorite Things (danceability: 0.417, tempo: 172.045, energy: 0.670). User's top artists: Dave Brubeck, Miles Davis, John Coltrane, Thelonious Monk, Charles Mingus. User's top genres: jazz, bebop, modal jazz, cool jazz. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. Blue in Green by Miles Davis\n2. Moanin' by Art Blakey & The Jazz Messengers\n3. Giant Steps by John Coltrane\n4. Goodbye Pork Pie Hat by Charles Mingus\n5. Straight, No Chaser by Thelonious Monk"
-  },
-  {
-    "input": "User likes tracks: Master of Puppets (danceability: 0.489, tempo: 212.000, energy: 0.983), Paranoid (danceability: 0.648, tempo: 166.089, energy: 0.965), Ace of Spades (danceability: 0.551, tempo: 140.016, energy: 0.992), Painkiller (danceability: 0.430, tempo: 174.091, energy: 0.994), War Pigs (danceability: 0.430, tempo: 137.972, energy: 0.893). User's top artists: Metallica, Black Sabbath, Judas Priest, Megadeth, Iron Maiden. User's top genres: metal, thrash metal, heavy metal, hard rock. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. Run to the Hills by Iron Maiden\n2. Holy Wars... The Punishment Due by Megadeth\n3. Breaking the Law by Judas Priest\n4. Blackened by Metallica\n5. Iron Man by Black Sabbath"
-  },
-  {
-    "input": "User likes tracks: Africa (danceability: 0.606, tempo: 93.964, energy: 0.723), Redemption Song (danceability: 0.573, tempo: 83.101, energy: 0.573), Is This Love (danceability: 0.754, tempo: 77.995, energy: 0.647), The Lion Sleeps Tonight (danceability: 0.822, tempo: 62.991, energy: 0.756), Malaika (danceability: 0.720, tempo: 108.999, energy: 0.610). User's top artists: Toto, Bob Marley, Miriam Makeba, Lucky Dube, Ladysmith Black Mambazo. User's top genres: reggae, afrobeat, world music, pop. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. Three Little Birds by Bob Marley\n2. Pata Pata by Miriam Makeba\n3. Homeless by Ladysmith Black Mambazo\n4. No Woman, No Cry by Bob Marley\n5. Africa Unite by Lucky Dube"
-  },
-  {
-    "input": "User likes tracks: Fade Into You (danceability: 0.351, tempo: 90.016, energy: 0.453), Creep (danceability: 0.366, tempo: 92.007, energy: 0.493), Wonderwall (danceability: 0.473, tempo: 87.994, energy: 0.712), High and Dry (danceability: 0.408, tempo: 84.102, energy: 0.632), Karma Police (danceability: 0.448, tempo: 80.045, energy: 0.509). User's top artists: Mazzy Star, Radiohead, Oasis, The Verve, Blur. User's top genres: alternative rock, britpop, dream pop. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. Bittersweet Symphony by The Verve\n2. Song 2 by Blur\n3. Exit Music (For a Film) by Radiohead\n4. Dreams by The Cranberries\n5. Look on Down from the Bridge by Mazzy Star"
-  },
-  {
-    "input": "User likes tracks: Bach Cello Suite No. 1 (danceability: 0.292, tempo: 83.023, energy: 0.432), Vivaldi Four Seasons: Spring (danceability: 0.421, tempo: 95.007, energy: 0.844), Mozart Symphony No. 40 (danceability: 0.382, tempo: 110.046, energy: 0.652), Beethoven Symphony No. 5 (danceability: 0.330, tempo: 108.093, energy: 0.812), Chopin Prelude in E Minor (danceability: 0.260, tempo: 63.908, energy: 0.318). User's top artists: Johann Sebastian Bach, Antonio Vivaldi, Wolfgang Amadeus Mozart, Ludwig van Beethoven, Frédéric Chopin. User's top genres: classical, baroque, romantic. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. Air on the G String by Johann Sebastian Bach\n2. Canon in D by Johann Pachelbel\n3. Moonlight Sonata by Ludwig van Beethoven\n4. Eine kleine Nachtmusik by Wolfgang Amadeus Mozart\n5. Nocturne in E-flat Major by Frédéric Chopin"
-  },
-  {
-    "input": "User likes tracks: Toxicity (danceability: 0.391, tempo: 117.021, energy: 0.891), Chop Suey! (danceability: 0.528, tempo: 127.946, energy: 0.972), BYOB (danceability: 0.475, tempo: 126.032, energy: 0.983), Aerials (danceability: 0.344, tempo: 116.967, energy: 0.876), Prison Song (danceability: 0.447, tempo: 136.015, energy: 0.945). User's top artists: System of a Down, Slipknot, Korn, Deftones, Tool. User's top genres: nu metal, alternative metal, progressive metal. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. Wait and Bleed by Slipknot\n2. Freak on a Leash by Korn\n3. Sober by Tool\n4. My Own Summer by Deftones\n5. Spiders by System of a Down"
-  },
-  {
-    "input": "User likes tracks: Blue Monday (danceability: 0.662, tempo: 130.012, energy: 0.852), Just Can't Get Enough (danceability: 0.794, tempo: 125.003, energy: 0.783), Enjoy the Silence (danceability: 0.641, tempo: 113.037, energy: 0.768), Personal Jesus (danceability: 0.628, tempo: 130.100, energy: 0.899), True Faith (danceability: 0.625, tempo: 125.985, energy: 0.846). User's top artists: New Order, Depeche Mode, The Cure, Pet Shop Boys, Erasure. User's top genres: synthpop, new wave, post-punk. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. Bizarre Love Triangle by New Order\n2. Sweet Dreams by Eurythmics\n3. West End Girls by Pet Shop Boys\n4. A Forest by The Cure\n5. Chains of Love by Erasure"
-  },
-  {
-    "input": "User likes tracks: Sukiyaki (danceability: 0.600, tempo: 87.009, energy: 0.320), Shiki no Uta (danceability: 0.692, tempo: 87.094, energy: 0.748), Uchiage Hanabi (danceability: 0.532, tempo: 75.040, energy: 0.623), Lemon (danceability: 0.558, tempo: 91.028, energy: 0.682), Koi (danceability: 0.720, tempo: 128.070, energy: 0.820). User's top artists: Hikaru Utada, Kenshi Yonezu, Aimer, RADWIMPS, LiSA. User's top genres: j-pop, anime, japanese rock. Recommend 5 songs that match the user's taste in music.",
-    "output": "1. First Love by Hikaru Utada\n2. Sparkle by RADWIMPS\n3. Gurenge by LiSA\n4. Peace Sign by Kenshi Yonezu\n5. Brave Shine by Aimer"
-  }
+    {
+        "input": "User likes tracks: As It Was (danceability: 0.682, tempo: 118.045, energy: 0.741), Bad Habit (danceability: 0.778, tempo: 89.978, energy: 0.640), Levitating (danceability: 0.813, tempo: 103.993, energy: 0.812), Running Up That Hill (danceability: 0.492, tempo: 109.934, energy: 0.631), About Damn Time (danceability: 0.753, tempo: 113.999, energy: 0.754). User's top artists: Harry Styles, Lizzo, Kate Bush, Steve Lacy, Dua Lipa. User's top genres: pop, pop rap, funk, indie pop, dance pop. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Watermelon Sugar by Harry Styles\n2. Don't Start Now by Dua Lipa\n3. Juice by Lizzo\n4. Blinding Lights by The Weeknd\n5. Heat Waves by Glass Animals"
+    },
+    {
+        "input": "User likes tracks: Blinding Lights (danceability: 0.514, tempo: 171.005, energy: 0.740), Take My Breath (danceability: 0.592, tempo: 121.987, energy: 0.780), Save Your Tears (danceability: 0.574, tempo: 115.089, energy: 0.674), Out of Time (danceability: 0.620, tempo: 93.953, energy: 0.460), Sacrifice (danceability: 0.694, tempo: 124.022, energy: 0.827). User's top artists: The Weeknd, Ariana Grande, Doja Cat, Calvin Harris, SZA. User's top genres: pop, electropop, r&b, funk, dance pop, soul. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Starboy by The Weeknd\n2. New Rules by Dua Lipa\n3. Good Days by SZA\n4. Stay With Me by Calvin Harris\n5. Say So by Doja Cat"
+    },
+    {
+        "input": "User likes tracks: Industry Baby (danceability: 0.648, tempo: 150.021, energy: 0.895), Montero (danceability: 0.711, tempo: 88.986, energy: 0.728), SUN GOES DOWN (danceability: 0.614, tempo: 91.969, energy: 0.591), HOLIDAY (danceability: 0.773, tempo: 124.058, energy: 0.735), Old Town Road (danceability: 0.884, tempo: 136.081, energy: 0.832). User's top artists: Lil Nas X, Billie Eilish, Post Malone, Megan Thee Stallion, Travis Scott. User's top genres: rap, pop rap, trap, hip hop, pop, alternative pop. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Circles by Post Malone\n2. Savage Remix by Megan Thee Stallion ft. Beyonc\u00e9\n3. Happier Than Ever by Billie Eilish\n4. Goosebumps by Travis Scott\n5. Mood by 24kGoldn ft. Iann Dior"
+    },
+    {
+        "input": "User likes tracks: Euphoria (danceability: 0.598, tempo: 126.993, energy: 0.768), Butter (danceability: 0.761, tempo: 110.048, energy: 0.812), Dynamite (danceability: 0.764, tempo: 114.925, energy: 0.830), Boy With Luv (danceability: 0.730, tempo: 120.092, energy: 0.742), Permission to Dance (danceability: 0.658, tempo: 124.015, energy: 0.733). User's top artists: BTS, BLACKPINK, TWICE, ITZY, SEVENTEEN. User's top genres: k-pop, k-pop boy group, k-pop girl group, pop, dance pop, korean pop. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Kill This Love by BLACKPINK\n2. Fancy by TWICE\n3. Dalla Dalla by ITZY\n4. Left & Right by SEVENTEEN\n5. ON by BTS"
+    },
+    {
+        "input": "User likes tracks: The Less I Know The Better (danceability: 0.685, tempo: 119.927, energy: 0.733), Feels Like We Only Go Backwards (danceability: 0.505, tempo: 91.054, energy: 0.544), Elephant (danceability: 0.545, tempo: 123.998, energy: 0.927), Borderline (danceability: 0.706, tempo: 119.993, energy: 0.718), Lost In Yesterday (danceability: 0.660, tempo: 113.994, energy: 0.764). User's top artists: Tame Impala, Arctic Monkeys, Mac DeMarco, Gorillaz, Glass Animals. User's top genres: indie rock, psych rock, chillwave, alternative pop, dream pop, indie pop. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Do I Wanna Know? by Arctic Monkeys\n2. Space Song by Beach House\n3. Somebody Else by The 1975\n4. Momentary Bliss by Gorillaz\n5. Heat Waves by Glass Animals"
+    },
+    {
+        "input": "User likes tracks: Blame It on the Boogie (danceability: 0.853, tempo: 116.058, energy: 0.897), September (danceability: 0.780, tempo: 125.991, energy: 0.865), Stayin' Alive (danceability: 0.796, tempo: 103.986, energy: 0.810), Le Freak (danceability: 0.871, tempo: 119.984, energy: 0.879), Get Down On It (danceability: 0.843, tempo: 110.042, energy: 0.864). User's top artists: Earth, Wind & Fire, The Jacksons, Bee Gees, Chic, Kool & The Gang. User's top genres: disco, funk, pop, soul, r&b. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Dancing Queen by ABBA\n2. I Want You Back by The Jackson 5\n3. Boogie Wonderland by Earth, Wind & Fire\n4. You Should Be Dancing by Bee Gees\n5. Super Freak by Rick James"
+    },
+    {
+        "input": "User likes tracks: Smells Like Teen Spirit (danceability: 0.429, tempo: 117.098, energy: 0.935), Come As You Are (danceability: 0.443, tempo: 120.074, energy: 0.811), Lithium (danceability: 0.415, tempo: 120.005, energy: 0.854), Everlong (danceability: 0.486, tempo: 158.085, energy: 0.930), Learn to Fly (danceability: 0.519, tempo: 136.004, energy: 0.831). User's top artists: Nirvana, Foo Fighters, Pearl Jam, Soundgarden, Alice In Chains. User's top genres: grunge, alternative rock, post-grunge, hard rock. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Black by Pearl Jam\n2. Outshined by Soundgarden\n3. Rooster by Alice In Chains\n4. My Hero by Foo Fighters\n5. Heart-Shaped Box by Nirvana"
+    },
+    {
+        "input": "User likes tracks: Havana (danceability: 0.745, tempo: 104.989, energy: 0.586), Se\u00f1orita (danceability: 0.769, tempo: 116.981, energy: 0.660), Despacito (danceability: 0.696, tempo: 89.999, energy: 0.815), Mi Gente (danceability: 0.768, tempo: 105.015, energy: 0.888), Con Calma (danceability: 0.825, tempo: 94.994, energy: 0.866). User's top artists: Camila Cabello, Shawn Mendes, Daddy Yankee, J Balvin, Luis Fonsi. User's top genres: reggaeton, latin pop, pop, tropical house, dance pop. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Taki Taki by DJ Snake ft. Selena Gomez, Ozuna, Cardi B\n2. Felices los 4 by Maluma\n3. Chantaje by Shakira ft. Maluma\n4. In My Blood by Shawn Mendes\n5. Don't Go Yet by Camila Cabello"
+    },
+    {
+        "input": "User likes tracks: Clair de Lune (danceability: 0.207, tempo: 66.992, energy: 0.129), Moonlight Sonata (danceability: 0.195, tempo: 52.028, energy: 0.105), Nocturne Op. 9 No. 2 (danceability: 0.231, tempo: 68.031, energy: 0.123), Gymnop\u00e9die No. 1 (danceability: 0.295, tempo: 72.018, energy: 0.097), The Swan (danceability: 0.230, tempo: 79.903, energy: 0.112). User's top artists: Claude Debussy, Fr\u00e9d\u00e9ric Chopin, Ludwig van Beethoven, Erik Satie, Camille Saint-Sa\u00ebns. User's top genres: classical, romantic, impressionist. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Prelude in E Minor by Fr\u00e9d\u00e9ric Chopin\n2. Fur Elise by Ludwig van Beethoven\n3. Pavane by Gabriel Faur\u00e9\n4. Canon in D by Johann Pachelbel\n5. Reverie by Claude Debussy"
+    },
+    {
+        "input": "User likes tracks: Radioactive (danceability: 0.575, tempo: 139.970, energy: 0.829), Demons (danceability: 0.561, tempo: 89.973, energy: 0.757), It's Time (danceability: 0.580, tempo: 105.978, energy: 0.831), Believer (danceability: 0.567, tempo: 124.984, energy: 0.869), On Top of the World (danceability: 0.686, tempo: 105.013, energy: 0.851). User's top artists: Imagine Dragons, Bastille, OneRepublic, Coldplay, X Ambassadors. User's top genres: pop rock, alternative rock, indie pop, electropop. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Pompeii by Bastille\n2. Counting Stars by OneRepublic\n3. Yellow by Coldplay\n4. Renegades by X Ambassadors\n5. Warriors by Imagine Dragons"
+    },
+    {
+        "input": "User likes tracks: Shape of You (danceability: 0.825, tempo: 95.977, energy: 0.652), Thinking Out Loud (danceability: 0.533, tempo: 79.972, energy: 0.444), Perfect (danceability: 0.497, tempo: 95.026, energy: 0.440), Bad Habits (danceability: 0.782, tempo: 113.988, energy: 0.781), Castle on the Hill (danceability: 0.593, tempo: 135.032, energy: 0.830). User's top artists: Ed Sheeran, Adele, Taylor Swift, Sam Smith, Lewis Capaldi. User's top genres: pop, acoustic pop, singer-songwriter, british pop. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Someone Like You by Adele\n2. Before You Go by Lewis Capaldi\n3. All Too Well by Taylor Swift\n4. Stay With Me by Sam Smith\n5. Photograph by Ed Sheeran"
+    },
+    {
+        "input": "User likes tracks: Sandstorm (danceability: 0.776, tempo: 136.971, energy: 0.988), Levels (danceability: 0.718, tempo: 126.995, energy: 0.899), Strobe (danceability: 0.494, tempo: 127.002, energy: 0.909), Animals (danceability: 0.661, tempo: 128.019, energy: 0.948), Clarity (danceability: 0.627, tempo: 128.034, energy: 0.876). User's top artists: Darude, Avicii, Deadmau5, Martin Garrix, Zedd. User's top genres: edm, progressive house, trance, electro house, dance pop. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Don't You Worry Child by Swedish House Mafia\n2. Titanium by David Guetta ft. Sia\n3. Ghosts 'n' Stuff by Deadmau5\n4. The Nights by Avicii\n5. Spectrum by Zedd"
+    },
+    {
+        "input": "User likes tracks: Sunflower (danceability: 0.756, tempo: 89.971, energy: 0.599), Circles (danceability: 0.685, tempo: 120.002, energy: 0.651), Wow. (danceability: 0.887, tempo: 101.981, energy: 0.793), Congratulations (danceability: 0.640, tempo: 110.045, energy: 0.625), Goodbyes (danceability: 0.669, tempo: 140.094, energy: 0.728). User's top artists: Post Malone, Khalid, Halsey, Travis Scott, Billie Eilish. User's top genres: pop, rap, r&b, pop rap, alternative pop, hip hop. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Sunroof by Nicky Youre\n2. Eastside by Benny Blanco ft. Halsey & Khalid\n3. Sicko Mode by Travis Scott\n4. lovely by Billie Eilish ft. Khalid\n5. Rockstar by Post Malone ft. 21 Savage"
+    },
+    {
+        "input": "User likes tracks: Driver's License (danceability: 0.461, tempo: 144.093, energy: 0.561), good 4 u (danceability: 0.573, tempo: 169.954, energy: 0.844), deja vu (danceability: 0.609, tempo: 94.010, energy: 0.726), Brutal (danceability: 0.557, tempo: 150.050, energy: 0.927), happier (danceability: 0.434, tempo: 80.001, energy: 0.492). User's top artists: Olivia Rodrigo, Taylor Swift, Lorde, Billie Eilish, Conan Gray. User's top genres: pop, indie pop, singer-songwriter, bedroom pop, alternative pop. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. traitor by Olivia Rodrigo\n2. Heather by Conan Gray\n3. The Archer by Taylor Swift\n4. Royals by Lorde\n5. when the party's over by Billie Eilish"
+    },
+    {
+        "input": "User likes tracks: Lose Yourself (danceability: 0.624, tempo: 171.991, energy: 0.867), Not Afraid (danceability: 0.707, tempo: 87.991, energy: 0.897), Love the Way You Lie (danceability: 0.590, tempo: 84.995, energy: 0.849), The Real Slim Shady (danceability: 0.816, tempo: 105.037, energy: 0.879), Stan (danceability: 0.594, tempo: 82.962, energy: 0.712). User's top artists: Eminem, 50 Cent, Dr. Dre, Snoop Dogg, Kanye West. User's top genres: rap, hip hop, pop rap, gangsta rap. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. In Da Club by 50 Cent\n2. Still D.R.E. by Dr. Dre ft. Snoop Dogg\n3. Gold Digger by Kanye West ft. Jamie Foxx\n4. Forgot About Dre by Dr. Dre ft. Eminem\n5. Mockingbird by Eminem"
+    },
+    {
+        "input": "User likes tracks: Somebody to Love (danceability: 0.453, tempo: 112.023, energy: 0.761), Bohemian Rhapsody (danceability: 0.407, tempo: 143.986, energy: 0.637), Don't Stop Me Now (danceability: 0.608, tempo: 156.001, energy: 0.894), We Are the Champions (danceability: 0.313, tempo: 63.978, energy: 0.699), Radio Ga Ga (danceability: 0.505, tempo: 112.089, energy: 0.813). User's top artists: Queen, David Bowie, Elton John, The Beatles, Fleetwood Mac. User's top genres: classic rock, glam rock, pop rock. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Heroes by David Bowie\n2. Tiny Dancer by Elton John\n3. Let It Be by The Beatles\n4. Dreams by Fleetwood Mac\n5. Under Pressure by Queen & David Bowie"
+    },
+    {
+        "input": "User likes tracks: Hotline Bling (danceability: 0.736, tempo: 134.938, energy: 0.487), One Dance (danceability: 0.801, tempo: 104.982, energy: 0.617), In My Feelings (danceability: 0.869, tempo: 94.960, energy: 0.554), God's Plan (danceability: 0.742, tempo: 77.988, energy: 0.584), Laugh Now Cry Later (danceability: 0.774, tempo: 135.008, energy: 0.632). User's top artists: Drake, Rihanna, The Weeknd, Future, Travis Scott. User's top genres: rap, r&b, trap, pop, pop rap. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Work by Rihanna ft. Drake\n2. Life Is Good by Future ft. Drake\n3. Blinding Lights by The Weeknd\n4. Sicko Mode by Travis Scott\n5. Take Care by Drake ft. Rihanna"
+    },
+    {
+        "input": "User likes tracks: Rolling in the Deep (danceability: 0.548, tempo: 105.021, energy: 0.774), Hello (danceability: 0.334, tempo: 78.981, energy: 0.490), Easy on Me (danceability: 0.460, tempo: 70.000, energy: 0.435), Someone Like You (danceability: 0.415, tempo: 67.000, energy: 0.362), Set Fire to the Rain (danceability: 0.531, tempo: 108.023, energy: 0.748). User's top artists: Adele, Sam Smith, Ed Sheeran, Lewis Capaldi, Taylor Swift. User's top genres: pop, british pop, singer-songwriter, soul. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Stay With Me by Sam Smith\n2. Perfect by Ed Sheeran\n3. Before You Go by Lewis Capaldi\n4. All Too Well by Taylor Swift\n5. Skyfall by Adele"
+    },
+    {
+        "input": "User likes tracks: Humble (danceability: 0.800, tempo: 149.958, energy: 0.865), DNA (danceability: 0.725, tempo: 144.000, energy: 0.944), Alright (danceability: 0.771, tempo: 110.003, energy: 0.837), Money Trees (danceability: 0.637, tempo: 123.968, energy: 0.754), Swimming Pools (danceability: 0.596, tempo: 153.012, energy: 0.717). User's top artists: Kendrick Lamar, J. Cole, Travis Scott, Jay-Z, Childish Gambino. User's top genres: rap, hip hop, trap, conscious rap. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Power Trip by J. Cole ft. Miguel\n2. Goosebumps by Travis Scott\n3. This Is America by Childish Gambino\n4. N95 by Kendrick Lamar\n5. Empire State of Mind by Jay-Z ft. Alicia Keys"
+    },
+    {
+        "input": "User likes tracks: Viva La Vida (danceability: 0.617, tempo: 138.005, energy: 0.706), Fix You (danceability: 0.367, tempo: 138.040, energy: 0.514), Yellow (danceability: 0.466, tempo: 172.058, energy: 0.600), Paradise (danceability: 0.563, tempo: 140.005, energy: 0.706), Adventure of a Lifetime (danceability: 0.720, tempo: 112.040, energy: 0.838). User's top artists: Coldplay, Imagine Dragons, OneRepublic, U2, Snow Patrol. User's top genres: pop rock, alternative rock, indie pop. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Counting Stars by OneRepublic\n2. Clocks by Coldplay\n3. With or Without You by U2\n4. Run by Snow Patrol\n5. Believer by Imagine Dragons"
+    },
+    {
+        "input": "User likes tracks: Smooth Criminal (danceability: 0.756, tempo: 118.015, energy: 0.841), Billie Jean (danceability: 0.790, tempo: 117.983, energy: 0.737), Beat It (danceability: 0.576, tempo: 138.011, energy: 0.910), Thriller (danceability: 0.723, tempo: 120.055, energy: 0.798), Black or White (danceability: 0.710, tempo: 115.041, energy: 0.874). User's top artists: Michael Jackson, Prince, Stevie Wonder, Whitney Houston, Madonna. User's top genres: pop, funk, r&b, soul, dance pop. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Purple Rain by Prince\n2. I Wanna Dance with Somebody by Whitney Houston\n3. Superstition by Stevie Wonder\n4. Vogue by Madonna\n5. Rock With You by Michael Jackson"
+    },
+    {
+        "input": "User likes tracks: Take Five (danceability: 0.501, tempo: 171.979, energy: 0.601), So What (danceability: 0.351, tempo: 132.121, energy: 0.451), Round Midnight (danceability: 0.230, tempo: 67.055, energy: 0.238), A Love Supreme (danceability: 0.326, tempo: 134.006, energy: 0.562), My Favorite Things (danceability: 0.417, tempo: 172.045, energy: 0.670). User's top artists: Dave Brubeck, Miles Davis, John Coltrane, Thelonious Monk, Charles Mingus. User's top genres: jazz, bebop, modal jazz, cool jazz. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Blue in Green by Miles Davis\n2. Moanin' by Art Blakey & The Jazz Messengers\n3. Giant Steps by John Coltrane\n4. Goodbye Pork Pie Hat by Charles Mingus\n5. Straight, No Chaser by Thelonious Monk"
+    },
+    {
+        "input": "User likes tracks: Master of Puppets (danceability: 0.489, tempo: 212.000, energy: 0.983), Paranoid (danceability: 0.648, tempo: 166.089, energy: 0.965), Ace of Spades (danceability: 0.551, tempo: 140.016, energy: 0.992), Painkiller (danceability: 0.430, tempo: 174.091, energy: 0.994), War Pigs (danceability: 0.430, tempo: 137.972, energy: 0.893). User's top artists: Metallica, Black Sabbath, Judas Priest, Megadeth, Iron Maiden. User's top genres: metal, thrash metal, heavy metal, hard rock. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Run to the Hills by Iron Maiden\n2. Holy Wars... The Punishment Due by Megadeth\n3. Breaking the Law by Judas Priest\n4. Blackened by Metallica\n5. Iron Man by Black Sabbath"
+    },
+    {
+        "input": "User likes tracks: Africa (danceability: 0.606, tempo: 93.964, energy: 0.723), Redemption Song (danceability: 0.573, tempo: 83.101, energy: 0.573), Is This Love (danceability: 0.754, tempo: 77.995, energy: 0.647), The Lion Sleeps Tonight (danceability: 0.822, tempo: 62.991, energy: 0.756), Malaika (danceability: 0.720, tempo: 108.999, energy: 0.610). User's top artists: Toto, Bob Marley, Miriam Makeba, Lucky Dube, Ladysmith Black Mambazo. User's top genres: reggae, afrobeat, world music, pop. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Three Little Birds by Bob Marley\n2. Pata Pata by Miriam Makeba\n3. Homeless by Ladysmith Black Mambazo\n4. No Woman, No Cry by Bob Marley\n5. Africa Unite by Lucky Dube"
+    },
+    {
+        "input": "User likes tracks: Fade Into You (danceability: 0.351, tempo: 90.016, energy: 0.453), Creep (danceability: 0.366, tempo: 92.007, energy: 0.493), Wonderwall (danceability: 0.473, tempo: 87.994, energy: 0.712), High and Dry (danceability: 0.408, tempo: 84.102, energy: 0.632), Karma Police (danceability: 0.448, tempo: 80.045, energy: 0.509). User's top artists: Mazzy Star, Radiohead, Oasis, The Verve, Blur. User's top genres: alternative rock, britpop, dream pop. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Bittersweet Symphony by The Verve\n2. Song 2 by Blur\n3. Exit Music (For a Film) by Radiohead\n4. Dreams by The Cranberries\n5. Look on Down from the Bridge by Mazzy Star"
+    },
+    {
+        "input": "User likes tracks: Bach Cello Suite No. 1 (danceability: 0.292, tempo: 83.023, energy: 0.432), Vivaldi Four Seasons: Spring (danceability: 0.421, tempo: 95.007, energy: 0.844), Mozart Symphony No. 40 (danceability: 0.382, tempo: 110.046, energy: 0.652), Beethoven Symphony No. 5 (danceability: 0.330, tempo: 108.093, energy: 0.812), Chopin Prelude in E Minor (danceability: 0.260, tempo: 63.908, energy: 0.318). User's top artists: Johann Sebastian Bach, Antonio Vivaldi, Wolfgang Amadeus Mozart, Ludwig van Beethoven, Fr\u00e9d\u00e9ric Chopin. User's top genres: classical, baroque, romantic. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Air on the G String by Johann Sebastian Bach\n2. Canon in D by Johann Pachelbel\n3. Moonlight Sonata by Ludwig van Beethoven\n4. Eine kleine Nachtmusik by Wolfgang Amadeus Mozart\n5. Nocturne in E-flat Major by Fr\u00e9d\u00e9ric Chopin"
+    },
+    {
+        "input": "User likes tracks: Toxicity (danceability: 0.391, tempo: 117.021, energy: 0.891), Chop Suey! (danceability: 0.528, tempo: 127.946, energy: 0.972), BYOB (danceability: 0.475, tempo: 126.032, energy: 0.983), Aerials (danceability: 0.344, tempo: 116.967, energy: 0.876), Prison Song (danceability: 0.447, tempo: 136.015, energy: 0.945). User's top artists: System of a Down, Slipknot, Korn, Deftones, Tool. User's top genres: nu metal, alternative metal, progressive metal. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Wait and Bleed by Slipknot\n2. Freak on a Leash by Korn\n3. Sober by Tool\n4. My Own Summer by Deftones\n5. Spiders by System of a Down"
+    },
+    {
+        "input": "User likes tracks: Blue Monday (danceability: 0.662, tempo: 130.012, energy: 0.852), Just Can't Get Enough (danceability: 0.794, tempo: 125.003, energy: 0.783), Enjoy the Silence (danceability: 0.641, tempo: 113.037, energy: 0.768), Personal Jesus (danceability: 0.628, tempo: 130.100, energy: 0.899), True Faith (danceability: 0.625, tempo: 125.985, energy: 0.846). User's top artists: New Order, Depeche Mode, The Cure, Pet Shop Boys, Erasure. User's top genres: synthpop, new wave, post-punk. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Bizarre Love Triangle by New Order\n2. Sweet Dreams by Eurythmics\n3. West End Girls by Pet Shop Boys\n4. A Forest by The Cure\n5. Chains of Love by Erasure"
+    },
+    {
+        "input": "User likes tracks: Sukiyaki (danceability: 0.600, tempo: 87.009, energy: 0.320), Shiki no Uta (danceability: 0.692, tempo: 87.094, energy: 0.748), Uchiage Hanabi (danceability: 0.532, tempo: 75.040, energy: 0.623), Lemon (danceability: 0.558, tempo: 91.028, energy: 0.682), Koi (danceability: 0.720, tempo: 128.070, energy: 0.820). User's top artists: Hikaru Utada, Kenshi Yonezu, Aimer, RADWIMPS, LiSA. User's top genres: j-pop, anime, japanese rock. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. First Love by Hikaru Utada\n2. Sparkle by RADWIMPS\n3. Gurenge by LiSA\n4. Peace Sign by Kenshi Yonezu\n5. Brave Shine by Aimer"
+    },
+    {
+        "input": "User likes tracks: Armageddon (danceability: 0.696, tempo: 91.989, energy: 0.789), Sticky (danceability: 0.702, tempo: 99.971, energy: 0.701), \u30aa\u30c8\u30ce\u30b1 - Otonoke - Opening Theme to DAN DA DAN (danceability: 0.517, tempo: 169.745, energy: 0.842), \u6674\u308b (danceability: 0.695, tempo: 101.955, energy: 0.571), Right Now (danceability: 0.67, tempo: 171.977, energy: 0.802). User's top artists: NewJeans, YOASOBI, RADWIMPS, Ski Mask The Slump God, BTS. User's top genres: pop, k-pop, underground hip hop, k-pop girl group, japanese teen pop, j-rock, rap, pop rap, trap, k-pop boy group, hip hop, miami hip hop, j-pop, visual kei. Recommend 5 songs that match the user's taste in music.",
+        "output": "1. Bliueberry Eyes by Max\n2. Ran-Dom by RADWIMPS\n3. Nandemonaiya by RADWIMPS\n4. FAKE LOVE by BTS\n5. Foot Fungus by Ski Mask the Slump God"
+    }
 ]
