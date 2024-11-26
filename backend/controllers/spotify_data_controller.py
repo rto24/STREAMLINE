@@ -1,7 +1,7 @@
 import requests
-from backend.config import SPOTIFY_TOP_TRACKS_URL, SPOTIFY_TOP_ARTISTS_URL, SPOTIFY_AUDIO_FEATURES_URL
+from backend.config import SPOTIFY_TOP_TRACKS_URL, SPOTIFY_TOP_ARTISTS_URL, SPOTIFY_AUDIO_FEATURES_URL, SPOTIFY_SEARCH_SONG_URL
 
-def get_user_top_tracks(access_token: str, limit=50) -> list:
+def get_user_top_tracks(access_token: str, limit=5) -> list:
   response = requests.get(
     SPOTIFY_TOP_TRACKS_URL,
     params={"limit": limit},
@@ -13,7 +13,7 @@ def get_user_top_tracks(access_token: str, limit=50) -> list:
   print("User top tracks data:", data)
   return data
 
-def get_user_top_artists(access_token: str, limit=50) -> list:
+def get_user_top_artists(access_token: str, limit=5) -> list:
   response = requests.get(
     SPOTIFY_TOP_ARTISTS_URL,
     params={"limit": limit},
@@ -37,3 +37,19 @@ def get_user_audio_metadata(access_token: str, track_ids: list) -> list:
   print("User audio metadata:", data)
   return data
  
+def search_song(access_token: str, song_name: str, artist_name: str):
+  response = requests.get(
+    SPOTIFY_SEARCH_SONG_URL,
+    params={
+      "q": f"track:{song_name} artist:{artist_name}",
+      "type": "track",
+      "limit": 1
+    },
+    headers={
+      "Authorization": f"Bearer {access_token}"
+    }
+  )
+  data = response.json()
+  print("Song search result:", data)
+  return data
+  
