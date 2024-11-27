@@ -4,14 +4,14 @@ from fastapi import Depends
 from backend.controllers.spotify_data_controller import get_user_top_tracks, get_user_top_artists, get_user_audio_metadata
 from backend.middleware.auth_middleware import jwt_middleware_access_token 
 
-def fetch_user_data(access_token: str, limit=5, output_file: str = "backend/data/train.json"):
-  tracks = get_user_top_tracks(access_token, limit=limit)
-  artists = get_user_top_artists(access_token, limit=limit)
+async def fetch_user_data(access_token: str, limit=5, output_file: str = "backend/data/train.json"):
+  tracks = await get_user_top_tracks(access_token, limit=limit)
+  artists = await get_user_top_artists(access_token, limit=limit)
   
   track_ids = []
   for track in tracks:
     track_ids.append(track["id"])
-  song_metadata = get_user_audio_metadata(access_token, track_ids)
+  song_metadata = await get_user_audio_metadata(access_token, track_ids)
 
   combined_track_data = []
   for track, metadata in zip(tracks, song_metadata):

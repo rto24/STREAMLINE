@@ -1,13 +1,14 @@
 import openai
 import os
 import sys
+import asyncio
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 from backend.config import OPENAI_API_KEY
 
 openai.api_key = OPENAI_API_KEY  
-print(OPENAI_API_KEY)
-def generate_recommendations(input_text, model="gpt-4"):
+
+def generate_recommendations_sync(input_text, model="gpt-4"):
   """
   Use GPT-4 via OpenAI API to generate music recommendations.
   """
@@ -29,8 +30,10 @@ def generate_recommendations(input_text, model="gpt-4"):
     print(f"Error generating recommendations: {e}")
     return None
 
+async def generate_recommendations(input_text, model="gpt-4"):
+  return await asyncio.to_thread(generate_recommendations_sync, input_text, model)
+
 if __name__ == "__main__":
-  # Example input
   input_text = (
     "User likes tracks: Blinding Lights (danceability: 0.514, tempo: 171.005, energy: 0.740), "
     "Take My Breath (danceability: 0.592, tempo: 121.987, energy: 0.780). "
