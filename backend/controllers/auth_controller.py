@@ -52,8 +52,8 @@ async def handle_spotify_callback(code: str):
   
   jwt_token = jwt.encode(payload, JWT_SECRET, algorithm=JWT_ALGORITHM)
   return {
-        "jwt_token": jwt_token,
-        "profile_data": profile_data,
-        "access_token": access_token,
-        "refresh_token": token_data.get("refresh_token"),
+    "jwt_token": jwt_token,
+    "profile_data": profile_data,
+    "access_token": access_token,
+    "refresh_token": token_data.get("refresh_token"),
     }

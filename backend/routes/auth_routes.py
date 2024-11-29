@@ -16,28 +16,40 @@ async def login():
 async def callback(code: str):
   try:
     data = await handle_spotify_callback(code)
-    print("Spotify callback data:", data["profile_data"]["display_name"])
+
+    if not data or "profile_data" not in data or "jwt_token" not in data:
+        raise ValueError(f"Invalid data returned from handle_spotify_callback: {data}")
+
+    username = data["profile_data"]["id"]
     jwt_token = data["jwt_token"]
-    
-    username = data["profile_data"]["display_name"]
+
+    if not username:
+        raise ValueError(f"Username not found in profile data: {data}")
+
+    print(f"Username: {username}, JWT: {jwt_token}")
     playlists = []
-    
+
     existing_user = get_user_by_username(username)
+    print("Existing user response:", existing_user)
+
     if not existing_user:
-      insert_user(username, playlists)
-    
+        insert_user(username, playlists)
+        print(f"User {username} inserted successfully.")
+
     frontend_url = "http://localhost:3000/home"
-    response = RedirectResponse(url=f"{frontend_url}")
+    response = RedirectResponse(url=frontend_url)
     response.set_cookie(
-      key="spotify_jwt",
-      value=jwt_token,
-      httponly=True,
-      secure=False,
-      samesite="Strict",
-      max_age = 60*60
+        key="spotify_jwt",
+        value=jwt_token,
+        httponly=True,
+        secure=True,
+        samesite="None",
+        max_age=60 * 60,
     )
+    print("Cookie set successfully.")
     return response
   except Exception as e:
+    print(f"Error in callback: {e}")
     raise HTTPException(status_code=500, detail=str(e))
   
 @router.get("/user")

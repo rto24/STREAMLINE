@@ -24,7 +24,15 @@ async def get_songs(access_token: str):
     user_data = await fetch_user_data(access_token)
     generated_text = await generate_recommendations(user_data["reformatted_data"][0]["input"])
     recommended_songs = extract_songs_from_text(generated_text)
-    return recommended_songs
+    
+    searched_songs = []
+    for recommendation in recommended_songs:
+      song_name = recommendation["song"]
+      artist_name = recommendation["artist"]
+      returned_song = search_song(access_token, song_name, artist_name)
+      searched_songs.append(returned_song)
+      
+    return searched_songs
   except Exception as e:
     print(f"Error in get_songs: {e}")
     return []
