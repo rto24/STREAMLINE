@@ -5,8 +5,10 @@ export interface UserContextInterface {
 
 export interface GeneratedSongInterface {
   id: string,
+  artist: string,
   name: string,
-  desc: string,
+  url: string,
+  duration: number,
   img: string,
-  album: string
+  album: string,
 }
