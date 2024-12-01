@@ -27,7 +27,7 @@ async def fetch_user_data(access_token: str, limit=5, output_file: str = "backen
   
   reformatted_data = [
     {
-      "input": f"User likes tracks: {', '.join(combined_track_data)}. User's top artists: {', '.join(top_artists)}. User's top genres: {', '.join(top_genres)}. Recommend {limit} songs that match the user's taste in music and do not repeat already suggested songs.",
+      "input": f"User likes tracks: {', '.join(combined_track_data)}. User's top artists: {', '.join(top_artists)}. User's top genres: {', '.join(top_genres)}. Recommend {limit} songs that match the user's taste in music and do not repeat already suggested songs. Please ensure these are real songs.",
       "output": "1. Song A by Artist B\n2. Song C by Artist D\n3. Song E by Arist F\n4. Song G by Artist H\n5. Song I by Arist J"
     }
   ]
