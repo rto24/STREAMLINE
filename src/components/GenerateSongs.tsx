@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
-import { GeneratedSongInterface } from '@/types/types'
+import { GeneratedSongInterface, SongCardInterface } from '@/types/types'
+import ExpandableCardDemo from './blocks/expandable-card-demo-standard'
 
 const GenerateSongs = () => {
-  const [ generatedSongs, setGeneratedSongs ] = useState<GeneratedSongInterface[]>([])
+  const [ generatedSongs, setGeneratedSongs ] = useState<GeneratedSongInterface[]>([]);
+  const [ displayedSongs, setDisplaySongs ] = useState<SongCardInterface[]>([]);
 
   const handleGenerateClick = async () => {
     try {
@@ -13,7 +15,9 @@ const GenerateSongs = () => {
         throw new Error("Could not generate songs");
       }
       const data = await response.json();
-      const songs: GeneratedSongInterface[] = []
+      const songs: GeneratedSongInterface[] = [];
+      const displaySongs: SongCardInterface[] = [];
+
       for (const song of data.songs) {
         if (song.tracks.items.length === 0) continue;
         const id = song.tracks.items[0].id;
@@ -34,8 +38,18 @@ const GenerateSongs = () => {
           "album": album
         };
         songs.push(songMetadata);
+
+        const displayCard = {
+          "artist": artist,
+          "name": name,
+          "img": img,
+          "ctaText": "Play",
+          "ctaLink": url
+        }
+        displaySongs.push(displayCard);
       }
       setGeneratedSongs(songs);
+      setDisplaySongs(displaySongs);
       console.log("GENERATED:", generatedSongs);
       console.log(data);
     } catch (error) {
@@ -51,6 +65,7 @@ const GenerateSongs = () => {
       >
         GENERATE SONGS
       </button>
+      <ExpandableCardDemo cards={displayedSongs}/>
     </div>
   )
 }
