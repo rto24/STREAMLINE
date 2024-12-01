@@ -92,9 +92,9 @@ export default function ExpandableCardDemo({ cards }: ExpandableCardDemoProps) {
       </AnimatePresence>
 
       <ul className="max-w-2xl mx-auto w-full gap-4">
-        {cards.map((card) => (
+        {cards.map((card, idx) => (
           <motion.div
-            key={card.name}
+            key={`${card.name}${idx}`}
             layoutId={`card-${card.name}-${id}`}
             onClick={() => setActive(card)}
             className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
