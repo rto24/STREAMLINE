@@ -12,3 +12,11 @@ export interface GeneratedSongInterface {
   img: string,
   album: string,
 }
+
+export interface SongCardInterface {
+  artist: string,
+  name: string,
+  img: string,
+  ctaText: string,
+  ctaLink: string
+}
