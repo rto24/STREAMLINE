@@ -1,12 +1,17 @@
 import React, { useState } from 'react'
 import { GeneratedSongInterface, SongCardInterface } from '@/types/types'
 import ExpandableCardDemo from './blocks/expandable-card-demo-standard'
+import { MultiStepLoader } from './ui/multi-step-loader'
+import { loadingText } from '@/data/data'
+import { g } from 'framer-motion/m'
 
 const GenerateSongs = () => {
   const [ generatedSongs, setGeneratedSongs ] = useState<GeneratedSongInterface[]>([]);
   const [ displayedSongs, setDisplaySongs ] = useState<SongCardInterface[]>([]);
+  const [ loadingSongs, setLoadingSongs ] = useState<boolean>(false);
 
   const handleGenerateClick = async () => {
+    setLoadingSongs(true);
     try {
       const response = await fetch('http://localhost:8080/spotify/organized-data', {
         credentials: 'include',
@@ -48,8 +53,10 @@ const GenerateSongs = () => {
         }
         displaySongs.push(displayCard);
       }
-      setGeneratedSongs(songs);
-      setDisplaySongs(displaySongs);
+      
+      setGeneratedSongs((prevSongs) => [...prevSongs, ...songs]);
+      setDisplaySongs((prevDisplaySongs) => [...prevDisplaySongs, ...displaySongs]);
+      setLoadingSongs(false);
       console.log("GENERATED:", generatedSongs);
       console.log(data);
     } catch (error) {
@@ -58,15 +65,28 @@ const GenerateSongs = () => {
   }
 
   return (
-    <div>
-      <button 
-        className="px-12 py-4 rounded-full bg-[#1ED760] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#21e065] transition-colors duration-200"
-        onClick={handleGenerateClick}
-      >
-        GENERATE SONGS
-      </button>
-      <ExpandableCardDemo cards={displayedSongs}/>
-    </div>
+    <>
+      <div>
+        <button 
+          className="px-12 py-4 rounded-full bg-[#1ED760] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#21e065] transition-colors duration-200"
+          onClick={handleGenerateClick}
+          >
+          GENERATE SONGS
+        </button>
+        <ExpandableCardDemo cards={displayedSongs}/>
+      </div>
+
+      {loadingSongs &&
+        (
+          <MultiStepLoader 
+            loadingStates={loadingText}
+            loading={true}
+            duration={2000}
+            loop={false}
+          />
+        )
+      }
+    </>
   )
 }
 
