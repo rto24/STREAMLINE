@@ -12,3 +12,5 @@ export const loadingText = [
     text: "Enjoy your songs",
   },
 ]
+
+export const flipWords = ['personal', 'accurate', 'meaningful', 'exciting', 'memorable']
