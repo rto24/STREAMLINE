@@ -118,9 +118,5 @@
     {
         "input": "User likes tracks: Armageddon (danceability: 0.696, tempo: 91.989, energy: 0.789), Sticky (danceability: 0.702, tempo: 99.971, energy: 0.701), \u30aa\u30c8\u30ce\u30b1 - Otonoke - Opening Theme to DAN DA DAN (danceability: 0.517, tempo: 169.745, energy: 0.842), \u6674\u308b (danceability: 0.695, tempo: 101.955, energy: 0.571), Right Now (danceability: 0.67, tempo: 171.977, energy: 0.802). User's top artists: NewJeans, YOASOBI, RADWIMPS, Ski Mask The Slump God, BTS. User's top genres: pop, k-pop, underground hip hop, k-pop girl group, japanese teen pop, j-rock, rap, pop rap, trap, k-pop boy group, hip hop, miami hip hop, j-pop, visual kei. Recommend 5 songs that match the user's taste in music.",
         "output": "1. Bliueberry Eyes by Max\n2. Ran-Dom by RADWIMPS\n3. Nandemonaiya by RADWIMPS\n4. FAKE LOVE by BTS\n5. Foot Fungus by Ski Mask the Slump God"
-    },
-    {
-        "input": "User likes tracks: Armageddon (danceability: 0.696, tempo: 91.989, energy: 0.789), Sticky (danceability: 0.702, tempo: 99.971, energy: 0.701), \u30aa\u30c8\u30ce\u30b1 - Otonoke - Opening Theme to DAN DA DAN (danceability: 0.517, tempo: 169.745, energy: 0.842), \u6674\u308b (danceability: 0.695, tempo: 101.955, energy: 0.571), Right Now (danceability: 0.67, tempo: 171.977, energy: 0.802). User's top artists: NewJeans, YOASOBI, RADWIMPS, Ski Mask The Slump God, BTS. User's top genres: hip hop, rap, j-rock, pop rap, underground hip hop, visual kei, pop, trap, japanese teen pop, k-pop boy group, miami hip hop, k-pop, j-pop, k-pop girl group. Recommend 5 songs that match the user's taste in music.",
-        "output": "1. Song A by Artist B\n2. Song C by Artist D\n3. Song E by Arist F\n4. Song G by Artist H\n5. Song I by Arist J"
     }
 ]
