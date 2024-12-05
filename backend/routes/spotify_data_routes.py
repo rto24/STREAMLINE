@@ -9,7 +9,7 @@ router = APIRouter()
 @router.get("/top-tracks")
 async def user_top_tracks(access_token: str = Depends(jwt_middleware_access_token)):
   try:
-    tracks = get_user_top_tracks(access_token)
+    tracks = await get_user_top_tracks(access_token)
     return {"top tracks": tracks}
   except Exception as e:
     raise HTTPException(status_code=500, detail=str(e))
@@ -17,7 +17,7 @@ async def user_top_tracks(access_token: str = Depends(jwt_middleware_access_toke
 @router.get("/top-artists")
 async def user_top_artists(access_token: str = Depends(jwt_middleware_access_token)):
   try:
-    artists = get_user_top_artists(access_token)
+    artists = await get_user_top_artists(access_token)
     return {"top artists": artists}
   except Exception as e:
     raise HTTPException(status_code=500, detail=str(e))
@@ -26,7 +26,7 @@ async def user_top_artists(access_token: str = Depends(jwt_middleware_access_tok
 @router.get("/audio-metadata")
 async def user_audio_metadata(access_token: str = Depends(jwt_middleware_access_token)):
   try:
-    audio_metadata = get_user_audio_metadata(access_token)
+    audio_metadata = await get_user_audio_metadata(access_token)
     return {"audio metadata": audio_metadata}
   except Exception as e:
     raise HTTPException(status_code=500, detail=str(e))
