@@ -2,13 +2,23 @@ import React, { useState } from 'react'
 import { GeneratedSongInterface, SongCardInterface } from '@/types/types'
 import ExpandableCardDemo from './blocks/expandable-card-demo-standard'
 import { MultiStepLoader } from './ui/multi-step-loader'
-import { loadingText } from '@/data/data'
-import { g } from 'framer-motion/m'
+import { loadingText, typewriterWords } from '@/data/data'
+import { TypewriterEffectSmooth } from './ui/typewriter-word-effect'
+import { FadeInEffect } from './ui/fade-in-text'
+import { useUser } from '@/context/UserContext'
 
 const GenerateSongs = () => {
   const [ generatedSongs, setGeneratedSongs ] = useState<GeneratedSongInterface[]>([]);
   const [ displayedSongs, setDisplaySongs ] = useState<SongCardInterface[]>([]);
   const [ loadingSongs, setLoadingSongs ] = useState<boolean>(false);
+
+  const { username } = useUser();
+
+  const welcomeMessage = [
+    { text: "Welcome" },
+    { text: "back" },
+    { text: username }
+  ];
 
   const handleGenerateClick = async () => {
     setLoadingSongs(true);
@@ -66,9 +76,11 @@ const GenerateSongs = () => {
 
   return (
     <>
-      <div>
+      <div className="flex flex-col justify-center">
+        <TypewriterEffectSmooth className="justify-center" words={typewriterWords} />
+        <FadeInEffect words={welcomeMessage} className="font-bold mx-auto"/>
         <button 
-          className="px-12 py-4 rounded-full bg-[#1ED760] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#21e065] transition-colors duration-200"
+          className="mx-auto px-12 py-4 w-1/4 rounded-full bg-[#1ED760] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#21e065] transition-colors duration-200"
           onClick={handleGenerateClick}
           >
           GENERATE SONGS
