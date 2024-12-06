@@ -7,9 +7,10 @@ import { SongCardInterface } from "@/types/types";
 
 interface ExpandableCardDemoProps {
   cards: SongCardInterface[];
+  saveToPlaylist(): void; 
 }
 
-export default function ExpandableCardDemo({ cards }: ExpandableCardDemoProps) {
+export default function ExpandableCardDemo({ saveToPlaylist, cards }: ExpandableCardDemoProps) {
   const [active, setActive] = useState<SongCardInterface | null>(null);
   const ref = useRef<HTMLDivElement>(null);
   const id = useId();
@@ -82,7 +83,7 @@ export default function ExpandableCardDemo({ cards }: ExpandableCardDemoProps) {
                     target="_blank"
                     className="px-4 py-3 text-sm rounded-full font-bold bg-green-500 text-white"
                   >
-                    {active.ctaText}
+                    {active.ctaText1}
                   </motion.a>
                 </div>
               </div>
@@ -124,12 +125,21 @@ export default function ExpandableCardDemo({ cards }: ExpandableCardDemoProps) {
                 </motion.p>
               </div>
             </div>
+            <div className="flex gap-5">
             <motion.button
-              layoutId={`button-${card.name}-${id}`}
+              layoutId={`button1-${card.name}-${id}`}
               className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-green-500 hover:text-white text-black mt-4 md:mt-0"
             >
-              {card.ctaText}
+              {card.ctaText1}
             </motion.button>
+            <motion.button
+              layoutId={`button2-${card.name}-${id}`}
+              className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-green-500 hover:text-white text-black mt-4 md:mt-0"
+              onClick={saveToPlaylist}
+            >
+              {card.ctaText2}
+            </motion.button>
+            </div>
           </motion.div>
         ))}
       </ul>
