@@ -58,7 +58,8 @@ const GenerateSongs = () => {
           "artist": artist,
           "name": name,
           "img": img,
-          "ctaText": "Play",
+          "ctaText1": "Play",
+          "ctaText2": "Save",
           "ctaLink": url
         }
         displaySongs.push(displayCard);
@@ -74,6 +75,11 @@ const GenerateSongs = () => {
     }
   }
 
+  const handleSaveClick = async (username: string | null) => {
+    //fill in with request logic after backend is setup
+    console.log(username)
+  }
+
   return (
     <>
       <div className="flex flex-col justify-center">
@@ -85,7 +91,7 @@ const GenerateSongs = () => {
           >
           GENERATE SONGS
         </button>
-        <ExpandableCardDemo cards={displayedSongs}/>
+        <ExpandableCardDemo saveToPlaylist={() => handleSaveClick(username)} cards={displayedSongs}/>
       </div>
 
       {loadingSongs &&
