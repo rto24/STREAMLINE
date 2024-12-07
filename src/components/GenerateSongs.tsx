@@ -75,9 +75,34 @@ const GenerateSongs = () => {
     }
   }
 
-  const handleSaveClick = async (username: string | null) => {
-    //fill in with request logic after backend is setup
-    console.log(username)
+  const handleSaveClick = async (username: string | null, song: SongCardInterface) => {
+    const formattedSong = {
+      artist: song.artist,
+      name: song.name,
+      img: song.img,
+      ctaLink: song.ctaLink, 
+  };
+
+    try {
+      const response = await fetch(`http://localhost:8080/playlist/${username}`, {
+        method: 'POST',
+        credentials: 'include',
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          playlists: [formattedSong],
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to save the song to the playlist")
+      }
+      const data = await response.json();
+      console.log("Song saved:", data)
+    } catch (error) {
+      console.error("Error saving song", error)
+    }
   }
 
   return (
@@ -91,7 +116,7 @@ const GenerateSongs = () => {
           >
           GENERATE SONGS
         </button>
-        <ExpandableCardDemo saveToPlaylist={() => handleSaveClick(username)} cards={displayedSongs}/>
+        <ExpandableCardDemo saveToPlaylist={(song: SongCardInterface) => handleSaveClick(username, song)} cards={displayedSongs}/>
       </div>
 
       {loadingSongs &&
