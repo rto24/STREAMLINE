@@ -7,7 +7,7 @@ import { SongCardInterface } from "@/types/types";
 
 interface ExpandableCardDemoProps {
   cards: SongCardInterface[];
-  saveToPlaylist(): void; 
+  saveToPlaylist: (song: SongCardInterface) => void;
 }
 
 export default function ExpandableCardDemo({ saveToPlaylist, cards }: ExpandableCardDemoProps) {
@@ -135,7 +135,10 @@ export default function ExpandableCardDemo({ saveToPlaylist, cards }: Expandable
             <motion.button
               layoutId={`button2-${card.name}-${id}`}
               className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-green-500 hover:text-white text-black mt-4 md:mt-0"
-              onClick={saveToPlaylist}
+              onClick={(e) => {
+                e.stopPropagation();
+                saveToPlaylist(card);
+              }}
             >
               {card.ctaText2}
             </motion.button>
