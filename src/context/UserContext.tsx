@@ -19,7 +19,7 @@ const UserProvider = ({ children }: {children: ReactNode}) => {
         });
         if (response.ok) {
           const data = await response.json();
-          setUsername(data.user.sub);
+          setUsername(data.sub);
         } 
       } catch (error) {
         console.error('Failed to get user:', error);
