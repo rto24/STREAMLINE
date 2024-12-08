@@ -29,3 +29,10 @@ def update_user_playlist(username: str, playlists: list):
   if not response:
     raise Exception(f"Error updating playlist: {response['error']}")
   return response.data
+
+def get_user_playlist(username: str):
+  response = supabase.table("person").select("playlists").eq("username", username).execute()
+  print("Saved songs retrieved:", response)
+  if not response:
+    raise Exception(f"Error getting saved songs: {response['error']}")
+  return response.data
