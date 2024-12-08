@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException, Query, Response, Depends
+from fastapi import APIRouter, HTTPException, Query, Response, Depends, Request
 from backend.controllers.auth_controller import generate_spotify_login_url, handle_spotify_callback
 from backend.middleware.auth_middleware import jwt_middleware_config
 from backend.db.supabase_client import get_user_by_username, insert_user
@@ -33,25 +33,27 @@ async def callback(code: str):
     print("Existing user response:", existing_user)
 
     if not existing_user:
-        insert_user(username, playlists)
-        print(f"User {username} inserted successfully.")
+      insert_user(username, playlists)
+      print(f"User {username} inserted successfully.")
 
     frontend_url = "http://localhost:3000/home"
     response = RedirectResponse(url=frontend_url)
     response.set_cookie(
-        key="spotify_jwt",
-        value=jwt_token,
-        httponly=True,
-        secure=True,
-        samesite="None",
-        max_age=60 * 60,
+      key="spotify_jwt",
+      value=jwt_token,
+      httponly=True,
+      secure=False,
+      samesite="Lax",
+      max_age=60 * 60,
     )
     print("Cookie set successfully.")
     return response
   except Exception as e:
     print(f"Error in callback: {e}")
     raise HTTPException(status_code=500, detail=str(e))
-  
+
 @router.get("/user")
 async def get_user(payload: dict = Depends(jwt_middleware_config)):
-  return {"user": payload}
+  return payload
+
+  
