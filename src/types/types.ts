@@ -21,3 +21,15 @@ export interface SongCardInterface {
   ctaText2: string,
   ctaLink: string
 }
+
+export interface SavedSongInterface {
+  artist: string,
+  name: string,
+  img: string,
+  ctaText: string,
+  ctaLink: string,
+}
+
+export interface PlaylistProps {
+  initialItems: SavedSongInterface[],
+}
