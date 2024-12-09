@@ -26,7 +26,8 @@ export interface SavedSongInterface {
   artist: string,
   name: string,
   img: string,
-  ctaText: string,
+  ctaText1?: string,
+  ctaText2?: string,
   ctaLink: string,
 }
 
