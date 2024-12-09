@@ -45,8 +45,13 @@ async function getSavedSongs(username: string): Promise<SavedSongInterface[]> {
       throw new Error("Failed to get saved songs")
     }
 
-    const songData: SavedSongInterface[] = await responseSongs.json();
-    return songData;
+    const songData = await responseSongs.json();
+    const updatedItems = songData[0].playlists.map((item: SavedSongInterface) => ({
+      ...item,
+      ctaText1: "Play",
+      ctaText2: "Remove"
+    }))
+    return updatedItems;
   } catch (error) {
     console.error(error)
     return [];
@@ -56,7 +61,6 @@ async function getSavedSongs(username: string): Promise<SavedSongInterface[]> {
 const Playlist = async () => {
   const username = await getUser()
   const initialItems = await getSavedSongs(username);
-  console.log(initialItems)
   return (
     <>
       <div>Playlist {username}</div>
