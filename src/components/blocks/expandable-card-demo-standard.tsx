@@ -3,15 +3,15 @@ import Image from "next/image";
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
-import { SongCardInterface } from "@/types/types";
+import { SavedSongInterface, SongCardInterface } from "@/types/types";
 
 interface ExpandableCardDemoProps {
-  cards: SongCardInterface[];
+  cards: SongCardInterface[] | SavedSongInterface[];
   saveToPlaylist: (song: SongCardInterface) => void;
 }
 
 export default function ExpandableCardDemo({ saveToPlaylist, cards }: ExpandableCardDemoProps) {
-  const [active, setActive] = useState<SongCardInterface | null>(null);
+  const [active, setActive] = useState<SongCardInterface | SavedSongInterface | null>(null);
   const ref = useRef<HTMLDivElement>(null);
   const id = useId();
 
