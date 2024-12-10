@@ -95,8 +95,8 @@ export default function ExpandableCardDemo({ saveToPlaylist, cards }: Expandable
       <ul className="max-w-2xl mx-auto w-full gap-4 mt-2">
         {cards.map((card, idx) => (
           <motion.div
-            key={`${card.name}${idx}`}
-            layoutId={`card-${card.name}-${id}`}
+            key={`${card.id}${idx}`}
+            layoutId={`card-${card.id}-${id}`}
             onClick={() => setActive(card)}
             className="p-4 flex flex-col md:flex-row justify-between items-center border-2 border-black hover:border-green-300 rounded-xl cursor-pointer dark:hover:bg-neutral-800"
           >
