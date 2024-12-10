@@ -14,6 +14,7 @@ export interface GeneratedSongInterface {
 }
 
 export interface SongCardInterface {
+  id: string,
   artist: string,
   name: string,
   img: string,
@@ -23,10 +24,12 @@ export interface SongCardInterface {
 }
 
 export interface SavedSongInterface {
+  id: string,
   artist: string,
   name: string,
   img: string,
-  ctaText: string,
+  ctaText1?: string,
+  ctaText2?: string,
   ctaLink: string,
 }
 
