@@ -55,6 +55,7 @@ const GenerateSongs = () => {
         songs.push(songMetadata);
 
         const displayCard = {
+          "id": id,
           "artist": artist,
           "name": name,
           "img": img,
@@ -65,8 +66,15 @@ const GenerateSongs = () => {
         displaySongs.push(displayCard);
       }
       
-      setGeneratedSongs((prevSongs) => [...prevSongs, ...songs]);
-      setDisplaySongs((prevDisplaySongs) => [...prevDisplaySongs, ...displaySongs]);
+      setGeneratedSongs((prevSongs) => {
+        const existingIds = new Set(prevSongs.map((song) => song.id));
+        return [...prevSongs, ...songs.filter((song) => !existingIds.has(song.id))];
+      });
+      
+      setDisplaySongs((prevDisplaySongs) => {
+        const existingKeys = new Set(prevDisplaySongs.map((song) => song.name + song.artist));
+        return [...prevDisplaySongs, ...displaySongs.filter((song) => !existingKeys.has(song.name + song.artist))];
+      });
       setLoadingSongs(false);
       console.log("GENERATED:", generatedSongs);
       console.log(data);
